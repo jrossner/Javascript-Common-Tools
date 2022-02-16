@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <script src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
+    <style>
+      #chart1 {
+        width: 500px;
+        heightL 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div><h1>You successfully started the app and served a static file</h1></div>
+    <div id='chart1'></div>
+    <script>
+      ch1 = document.getElementById('chart1')
+      Plotly.newPlot(ch1,
+                     [{
+                       type: 'pie',
+                       labels: ["Eaten","Left Over"],
+                       values: [0.27,.73],
+                       marker: {
+                         colors: ["silver", "tan"]
+                       }
+                     }],
+                     {
+                        title: "A Pie Chart"
+                     }
+                    )
+    </script>
+  </body>
+</html>
