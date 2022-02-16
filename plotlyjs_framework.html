@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <script src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
+    <style>
+      #chart1 {
+       width: 800px;
+       height: 600px;
+      }
+      #chart2 {
+       width: 800px;
+       height: 600px;
+      }
+      #chart3 {
+       width: 800px;
+       height: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id='chart1'></div>
+    <div id='chart2'></div>
+    <div id='chart3'></div>
+    <div>Data Courtesy of: <a href="https://www.sports-reference.com/"></div>
+    <script>
+      ch1 = document.getElementById('chart1')
+      Plotly.newPlot(ch1,
+                     [{
+                       name: "Eastern Teams",
+                       type: 'bar',
+                       x: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+                       y: [ -3.2, -2.1,  4.3,  1.6,  4.2,  3.7,  -.5,  7.3,  4.4,  2.2,  1.1, -2.8],
+                       marker: {
+                         color: 'rgba(0, 173, 254, 1)'
+                       }
+                     },
+                     {
+                       name: "Western Teams",
+                       type: 'bar',
+                       x: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+                       y: [  1.6,  .72,  3.4,  -.1,  1.9,  2.8,  3.7,    1,  1.8,  1.1,  2.2,   .4],
+                       marker: {
+                         color: 'rgba(255, 66, 42, 1)'
+                       }
+                     }],
+                     {
+                       title: "Avg Scoring Diff by Month"
+                     }
+                    )
+      
+      x = []
+      y = []
+      z = []
+      
+      for(i=0;i<100;i++) {
+        x.push(Math.random())
+        y.push(Math.random())
+        z.push(Math.random())
+      }
+      
+      ch2 = document.getElementById('chart2')
+      Plotly.newPlot(ch2,
+                     [{
+                       type: 'mesh3d',
+                       x: x,
+                       y: y,
+                       z: z,
+                       color: 'rgba(39, 182, 193, 1)',
+                       opacity: 0.9
+                     }],
+                     {
+                       title: "Trivariate Distribution"
+                     }
+                    )
+      
+      ch3 = document.getElementById('chart3')
+      Plotly.newPlot(ch3,
+                     [{
+                       type: 'box',
+                       y: [50,46,34,34,34,31,30,30,30,30,30,29,29,28,28,26,26,26,26,25,24,23,23,22,22,22,21,21,20,19,19,19,18,17,17,16,16,16,15,13,13,13,12,9,9],
+                       name: 'Jaylen Brown',
+                       fillcolor: 'rgba(0, 28, 109, 1)'
+                     },
+                     {
+                       type: 'box',
+                       y: [20,18,31,41,23,27,20,14,10,32,22,27,21,23,34,37,33,30,15,24,8,26,37,31,34,29,24,42,27,25,17,18,25,19,36,19,24,33,20,23,27,12,27,51,36,20,38,20,19,24,15,19,24,38,28],
+                       name: 'Jayson Tatum',
+                       fillcolor: 'rgba(0, 101, 255, 1)'
+                     }],
+                     {
+                       title: "2021-2022 Regular Season Celtics Stars Points Scored"
+                     }
+                    )
+    </script>
+  </body>
+</html>
