@@ -4,7 +4,7 @@ for (const [vrbl, obs] of Object.entries(data)) {
   console.log(`For variable: ${vrbl}, the data is: ${obs}`)
 }
 
-*/ prints:
+/* prints:
   For variable: A, the data is: 1,2,3,4
   For variable: B, the data is: 0.1,0.2,0.3 
   For variable: C, the data is: 10,20,30,40
