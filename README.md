@@ -2,6 +2,7 @@
 Simple common code I frequently use in Javascript
 
 Included:
-  - Creating Simple Server
+  - Creating Simple Web App
+    - Starts a server and listens for connections 
   - Defining Functions
   - Iterating
