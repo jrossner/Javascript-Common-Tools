@@ -12,9 +12,6 @@ function rooter(value,root = 2) {
   4
 */
 
-// to export function: 
-module.exports = { rooter }
-
 // to import function from another file:
 const {rooter} = require("./function")
 
@@ -22,3 +19,9 @@ const {rooter} = require("./function")
 function arrayTotal(array) {
   return array.reduce(function(a,b) { return a+b }, 0)
 }
+
+// to export functions
+module.exports = {
+                  rooter,
+                  arrayTotal
+                 }
