@@ -12,7 +12,7 @@ app.get('/add', (req, res) => {
   res.send(`The total of ${a} + ${b} is ${a+b}`)
 })
 
-app.use(express.static('demo_visuals'))
+app.use(express.static('demo-visuals'))
 
 app.listen(port, () => {
   console.log(`Simple App listening on port: ${port}`)
