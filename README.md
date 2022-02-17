@@ -3,10 +3,15 @@ Common code I frequently use in Javascript
 
 Included:
   - Creating Simple Web App
-    - Starts a server and listens for connections 
+    - ▶️ simple-express-app.js
+    - 💭 Starts a server and listens for connections 
   - Defining Functions
+    - ▶️ functions.js
   - Importing function from another file
-    - For use in NPM 
+    - ▶️ import-function-example.js
+    - 💭 For use in NPM 
   - Iterating
+    - ▶️ iterations.js
   - Plotly.js Charting
-    - Rendered using HTML
+    - ▶️ plotlyjs-framework.html
+    - 💭 Rendered using HTML
