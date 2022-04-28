@@ -7,6 +7,9 @@ Included:
     - 💭 Starts a server and listens for connections 
   - Defining Functions
     - ▶️ functions.js
+      - get root of number
+      - get array total
+      - round number  
   - Importing function from another file
     - ▶️ import-function-example.js
     - 💭 For use in NPM 
