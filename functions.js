@@ -22,7 +22,7 @@ function arrayTotal(array) {
 
 // rounds number to specified places
 function round(num,places) {
-  return Math.round(num*Math.pow(10,places))/(Math.pow(10,places))
+  return Math.round(num*Math.pow(10,places))/Math.pow(10,places)
 }
 
 // to export functions
