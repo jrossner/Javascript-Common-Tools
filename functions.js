@@ -20,8 +20,14 @@ function arrayTotal(array) {
   return array.reduce(function(a,b) { return a+b }, 0)
 }
 
+// rounds number to specified places
+function round(num,places) {
+  return Math.round(num*Math.pow(10,places))/(Math.pow(10,places))
+}
+
 // to export functions
 module.exports = {
                   rooter,
-                  arrayTotal
+                  arrayTotal,
+                  round
                  }
