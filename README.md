@@ -2,6 +2,8 @@
 Common code I frequently use in Javascript
 
 Included:
+  - Conditional Assignment of Variables
+    - ▶️ conditional-assignment.js
   - Creating Simple Web App
     - ▶️ simple-express-app.js
     - 💭 Starts a server and listens for connections 
